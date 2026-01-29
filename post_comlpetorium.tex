@@ -1,0 +1,93 @@
+% !TEX program = LuaLaTeX+se
+\documentclass[12pt,a5paper]{scrartcl}
+
+% 1. MARGÓK BEÁLLÍTÁSA (Kisebb margó, hogy több férjen el)
+\usepackage{geometry}
+\geometry{
+  top=1cm,
+  bottom=1cm,
+  left=1cm,
+  right=1cm,
+}
+
+% 2. FONTOS: A babel betöltése ELŐBB
+\usepackage[latin]{babel} 
+
+% 3. Gregoriotex CSAK EZUTÁN
+\usepackage{gregoriotex} 
+
+\usepackage{fontspec}
+\setmainfont{Junicode}
+
+% Opcionális: Szebb sorkizárás (segít eltüntetni a nagy lyukakat a szövegben)
+\usepackage{microtype}
+
+\newcommand{\Vslash}{Ꝟ.}
+\newcommand{\Rslash}{\textrm{R\kern-0.35em/}.} 
+
+\setkomafont{section}{\normalfont\centering\huge\scshape} 
+\setcounter{secnumdepth}{-\maxdimen} 
+
+% --- GREGORIO BEÁLLÍTÁSOK ---
+\grechangedim{beforeinitialshift}{2.2mm}{scalable}
+\grechangedim{afterinitialshift}{2.2mm}{scalable}
+\grechangestyle{initial}{\fontsize{43}{43}\selectfont}
+\gresetlinecolor{gregoriocolor}
+\gresetheadercapture{commentary}{grecommentary}{string}
+\grechangestyle{annotation}{\small\bfseries}
+
+%\addto\extrasmagyar{%
+%  \hyphenpenalty=10000
+%  \exhyphenpenalty=10000
+%  \lefthyphenmin=62
+%  \righthyphenmin=62
+%  \emergencystretch=3em
+%}
+
+\begin{document}
+
+\section{Ad Processionem In Fine Completori}
+
+\gregorioscore[a]{an--salve_regina--dominican}
+\vspace{1em}
+\noindent
+%\selectlanguage{latin}
+\hspace*{2em}\Vslash{} Dignare me laudare te virgo sacráta - (T.P. Alleluia)\\
+\hspace*{2em}\textbf{\Rslash{} Da mihi virtútem contra hostes tuos - (T.P. Alleluia)}
+
+\vspace{1em}
+\textbf{Orémus}
+
+Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis salúte gaudére: et gloriósa beatæ Maríæ semper Vírginis intercessióne a præsénti liberári tristía et ætérna pérfrui lætítia: Per Christum Dóminum nostrum \\
+\textbf{\Rslash{}Amen}
+\vspace{1em}
+
+\gregorioscore[a]{an--o_lumen--dominican}
+\vspace{1em}
+\noindent
+\hspace*{2em}\Vslash{} Ora pro nobis, beáte Pater Dominíce - (T.P. Alleluia)\\
+\hspace*{2em}\textbf{\Rslash{} Ut digni efficiámur promissiónibus Christi -}\\
+{\raggedright (T.P. Alleluia.)\par}
+
+\vspace{1em}
+\textbf{Orémus}
+
+Concéde quǽsumus omnípotens Deus: ut, qui peccatórum nostrórum póndere prémimur - beáti Domínici Confessóris tui, Patris nostri, patrocínio sublevémur: Per Christum Dóminum nostrum \\
+\textbf{\Rslash{}Amen}
+
+\vspace{1em}
+\noindent
+\hspace*{2em}\Vslash{} Fidelium animae per nostrum. Dei requiescant in pace.\\
+\hspace*{2em}\textbf{\Rslash{} Amen}
+
+\section{Ima a hivatásokért}
+
+%\selectlanguage{magyar}
+% A sloppy parancs engedékenyebb a szóközökkel, ha nagyon nem fér ki a sor:
+\begin{center}
+Urunk, Jézus Krisztus, Te egykor meghívtad Egyházadba Szent Domonkos családját, hogy hírdesse az evangéliumot. Kérünk, küldj ugyanúgy ma is apostolokat aratásodba. Adj nekik bátorságot, bölcsességet és kegyelmet, hogy az emberek előtt méltóképpen tegyenek tanúságot halálodról, feltámadásodról és dicsőséges eljöveteledről.
+
+Engedd, hogy legszentebb Édesanyádnak, Rendünk pártfogójának közbenjárására legyünk a hit védőivé, a közömbösséget és a bűn sötétségét szétoszlató fénnyé: te, aki mindig velünk vagy. Amen  
+\end{center}
+
+\end{document}
